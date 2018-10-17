@@ -1,14 +1,92 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: sans-serif;
+  background: black;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+.App {
+  text-align: center;
+  position: relative;
+  padding: 0vh 10% 0vh 10%;
+  background: black;
+  height: 100vh;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  padding: 20px 10px 0px 10px;
+  background: hsl(44, 80%, 54%);
+}
+
+.button {
+  background: transparent;
+  font-size: 3rem;
+  color: hsl(39, 100%, 30%);
+}
+
+.button:hover {
+  color: white;
+  transition: 0.5s ease;
+}
+
+#buttons_tweet {
+  padding: 7px 7px 0px 7px;
+  margin-right: 5px;
+  border-radius: 100%;
+}
+
+#buttons_tweet a {
+  text-decoration: none;
+  color: hsl(39, 100%, 30%);
+}
+
+#buttons_tweet a:hover {
+  color: white;
+  transition: 0.5s ease;
+}
+
+#new-quote {
+  padding: 7px 7px 0px 7px;
+  margin-left: 5px;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+.quotes_container {
+  background: hsl(44, 80%, 54%);
+  display: block;
+  padding: 10px 10px 50px 10px;
+  font-family: "Averia Libre", cursive;
+}
+
+.quotes {
+  background: hsl(44, 80%, 54%);
+  padding: 10px;
+  font-size: 1.5rem;
+}
+.quotes_text {
+  color: hsl(39, 100%, 30%);
+}
+
+/* Alters Text Hightlight Background */
+.quotes_text::selection {
+  /* opacity: 0.1; */
+  background: transparent; /* WebKit/Blink Browsers */
+}
+.quotes_text::-moz-selection {
+  background: transparent; /* Gecko Browsers */
+}
+.quotes_author {
+  color: hsl(39, 100%, 30%);
+
+  padding-top: 10px;
+}
+
+.quotes_author::selection {
+  background: transparent; /* WebKit/Blink Browsers */
+}
+.quotes_author::-moz-selection {
+  background: transparent; /* WebKit/Blink Browsers */
 }
