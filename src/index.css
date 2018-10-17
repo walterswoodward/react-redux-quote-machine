@@ -58,7 +58,7 @@ body {
   background: hsl(44, 80%, 54%);
   display: block;
   padding: 10px 10px 50px 10px;
-  font-family: "Averia Libre", cursive;
+  font-family: "Averia Libre", monospace;
 }
 
 .quotes {
