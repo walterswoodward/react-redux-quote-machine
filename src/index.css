@@ -68,7 +68,7 @@ body {
 .quotes {
   background: black;
   padding: 10px;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 .quotes_text {
   color: hsl(39, 100%, 30%);
@@ -104,12 +104,5 @@ body {
 .buttons {
   width: 40%;
 }
-
-}
-
-@media(max-width: 600px){
-  .quotes {
-    font-size: 1.2rem;
-  }
 
 }
