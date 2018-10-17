@@ -14,7 +14,6 @@ export const ButtonsContainer = connect(
 )(
   class extends Component {
     render() {
-      console.log("this.props: ", this.props)
       return (
         <div className="buttons">
           <span id="buttons_tweet" className="button">

@@ -8,7 +8,6 @@ export const rootReducer = combineReducers({
 });
 const store = createStore(
   rootReducer,
-  // When is it appropriate to use thunk.default?
   applyMiddleware(thunk, logger)
 );
 
@@ -96,7 +95,7 @@ function QuotesReducer() {
 
 function nextQuoteAction() {
   const quotes = QuotesReducer().slice();
-  const index = Math.floor(Math.random() * quotes.length); // ri for random Index
+  const index = Math.floor(Math.random() * quotes.length);
   return quotes[index];
 }
 
