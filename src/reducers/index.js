@@ -87,7 +87,7 @@ function QuotesReducer() {
     {
       key: 12,
       content:
-        "Grant me the following in the name of our Lord Jesus Christ. Like a leper rotting in flesh, let all avoid me. Like a cripple without limbs, let me not move freely. Remove my cheeks, that tears may not roll down them. Crush my lips and tongue, that I may not sin with them. Pull out my nails, that I may not grasp nothing. Let my shoulders and back be bent, that I may carry nothing. Like a man with tumor in the head let me lack judgment. Ravage my body sworn to chastity leave me with no pride, and have me live in shame. Let no one pray for me. But only the grace of the Lord Jesus Christ have mercy on me.",
+        "Grant me the following in the name of our Lord Jesus Christ. Like a leper rotting in flesh, let all avoid me. Like a cripple without limbs, let me not move freely. Remove my cheeks, that tears may not roll down them. Crush my lips and tongue, that I may not sin with them. Pull out my nails, that I may grasp nothing. Let my shoulders and back be bent, that I may carry nothing. Like a man with a tumor in his head let me lack judgment. Ravage my body sworn to chastity leave me with no pride, and have me live in shame. Let no one pray for me. But only the grace of the Lord Jesus Christ have mercy on me.",
       author: "Sang-hyeon"
     }
   ];
