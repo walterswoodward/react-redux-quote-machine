@@ -10,14 +10,18 @@ body {
   position: relative;
   padding: 0vh 10% 0vh 10%;
   background: black;
+  width: 80%;
   height: 100vh;
 }
 
 .buttons {
   display: flex;
   justify-content: center;
-  padding: 20px 10px 0px 10px;
-  background: hsl(44, 80%, 54%);
+  padding: 10px 0px 10px 0px;
+  background: black;
+  width: 80%;
+  position: fixed;
+  margin: 0px auto;
 }
 
 .button {
@@ -55,14 +59,14 @@ body {
 }
 
 .quotes_container {
-  background: hsl(44, 80%, 54%);
+  background: black;
   display: block;
-  padding: 10px 10px 50px 10px;
+  padding: 70px 10px 50px 10px;
   font-family: "Averia Libre", monospace;
 }
 
 .quotes {
-  background: hsl(44, 80%, 54%);
+  background: black;
   padding: 10px;
   font-size: 1.5rem;
 }
