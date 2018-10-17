@@ -61,7 +61,7 @@ body {
 .quotes_container {
   background: black;
   display: block;
-  padding: 70px 10px 50px 10px;
+  padding: 85px 10px 50px 10px;
   font-family: "Averia Libre", monospace;
 }
 
@@ -85,7 +85,7 @@ body {
 .quotes_author {
   color: hsl(39, 100%, 30%);
 
-  padding-top: 10px;
+  padding-top: 25px;
 }
 
 .quotes_author::selection {
@@ -93,4 +93,23 @@ body {
 }
 .quotes_author::-moz-selection {
   background: transparent; /* WebKit/Blink Browsers */
+}
+
+@media(min-width: 900px){
+.App {
+  width: 40%;
+  margin: 0% 20% 0% 20%;
+}
+
+.buttons {
+  width: 40%;
+}
+
+}
+
+@media(max-width: 600px){
+  .quotes {
+    font-size: 1.2rem;
+  }
+
 }
