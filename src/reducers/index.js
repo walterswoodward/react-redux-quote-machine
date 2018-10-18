@@ -2,14 +2,16 @@ import { combineReducers, createStore, applyMiddleware } from "redux";
 import thunk from "redux-thunk";
 import { logger } from "redux-logger";
 
+// This is probably where you should look FIRST. Understand that the ACTUAL
+// reducer, the `rootReducer`, is just an object containing two KV pairs,
+// quotes, an object with all the quotes you have, and currentQuote, which
+// contains a function which returns a random quote each time the state is
+// reset.
+
 export const rootReducer = combineReducers({
   quotes: QuotesReducer,
   currentQuote: CurrentQuoteReducer
 });
-const store = createStore(
-  rootReducer,
-  applyMiddleware(thunk, logger)
-);
 
 function QuotesReducer() {
   return [
@@ -93,11 +95,33 @@ function QuotesReducer() {
   ];
 }
 
+// Notice here the QuotesReducer is of a specific data type - an ARRAY of
+// OBJECTS. The parent container NEEDS to be an ARRAY, because you need to be
+// able to iterate over the different quotes, HOWEVER, the elements themselves
+// are of type OBJECT, because you DO NOT need to iterate over them, but instead
+// you need to extract each of the values by their corresponding key quickly.
+// You can imagine how incredebily difficult this would be if someone made the
+// simple error of creating an object of arrays (I did that once!)!
+
 function nextQuoteAction() {
   const quotes = QuotesReducer().slice();
   const index = Math.floor(Math.random() * quotes.length);
   return quotes[index];
 }
+
+// Typically I think of reducers as containing objects/arrays; however, you can
+// also set state equal to functions, as long as those functions RETURN
+// object(s). You COULD have CurrentQuoteReducer(state=nextQuoteAction) and
+// QuotesReducer(state={--quotes--}) in the same function, however then you
+// would have to contend with nesting. This way, the process is much more clear
+// and linear. 
+//
+// * SUMMARY: First you have your QuotesReducer which contains all your quotes
+//   in a single object.  Then when the app loads AND whenever the next button
+//   is clicked on the UI, the CurrentQuoteReducer takes that object, randomly
+//   filters out a single quote, and returns that as the new currentQuote in the
+//   rootReducer's state. *Note: The QuotesReducer in this case could easily be
+//   replaced by an axios call to an API object as well.
 
 function CurrentQuoteReducer(state = nextQuoteAction(), action) {
   switch (action.type) {
@@ -106,5 +130,4 @@ function CurrentQuoteReducer(state = nextQuoteAction(), action) {
     default:
       return state;
   }
-  return state;
 }
