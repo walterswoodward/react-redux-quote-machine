@@ -17,7 +17,7 @@ export const ButtonsContainer = connect(
       return (
         <div className="buttons">
           <span id="buttons_tweet" className="button">
-            <a id= "tweet-quote" href="twitter.com/intent/tweet" target="_blank">
+            <a id= "tweet-quote" href="https://twitter.com/intent/tweet" target="_blank">
               <FontAwesomeIcon icon={faTwitter} />
             </a>
           </span>
