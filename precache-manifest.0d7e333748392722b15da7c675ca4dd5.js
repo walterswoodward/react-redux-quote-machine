@@ -4,19 +4,19 @@ self.__precacheManifest = [
     "url": "/react-redux-quote-machine/static/js/runtime~main.36511349.js"
   },
   {
-    "revision": "e64a4787ab7676fbd99d",
-    "url": "/react-redux-quote-machine/static/js/main.e64a4787.chunk.js"
+    "revision": "18532a8e5aac25d6ca2b",
+    "url": "/react-redux-quote-machine/static/js/main.18532a8e.chunk.js"
   },
   {
-    "revision": "61c1d353a5934b824063",
-    "url": "/react-redux-quote-machine/static/js/1.61c1d353.chunk.js"
+    "revision": "9e3e91f914e452e9ed18",
+    "url": "/react-redux-quote-machine/static/js/1.9e3e91f9.chunk.js"
   },
   {
-    "revision": "e64a4787ab7676fbd99d",
+    "revision": "18532a8e5aac25d6ca2b",
     "url": "/react-redux-quote-machine/static/css/main.6f7b4363.chunk.css"
   },
   {
-    "revision": "ee88bb5680b5384263cdff393d172066",
+    "revision": "a76814a8fa1df49c89be2b685dff82ea",
     "url": "/react-redux-quote-machine/index.html"
   }
 ];
